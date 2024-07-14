@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestorstyle.css">
+    <title>Gestor de libros</title>
+</head>
+<body>
+ <main>
+    <section>
+        <h1>Gestor de Libros</h1>
+        <p>Ingresar los datos del libro a ser ingresado</p>
+        <form id="formNuevoLibro" action="" method="post" enctype="multipart/form-data">
+            <div>
+            <label for="titulo">Titulo</label>
+            <input class="form-control" type="text" name="titulo" id="titulo">
+            </div>
+            <div>
+            <label for="autor">Autor</label>
+            <input class="form-control" type="text" name="autor" id="autor">
+            </div>
+            <div>
+            <label for="autor">Genero</label>
+            <input class="form-control" type="text" name="genero" id="genero">
+            </div>
+            <div >
+            <input class="align-self-center btn btn-succes" type="submit" value="Agregar libro">
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>Listado de libros del rincon de los libros<h2>
+        
+        <table  id="tableLibros">
+        <thead>
+            <tr>
+            
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Genero</th>
+            </tr>
+        </thead>
+        <tbody id="bodyTableLibros">
+        
+        </tbody>
+        </table>
+    </section>	
+ </main>
+ <footer>
+    <p>Hecho por Juan Manuel Desojo</p>
+ </footer>   
+ <script src="getLibros.js"></script>
+ <script src="postLibros.js"></script>
+</body>
+</html>
